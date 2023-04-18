@@ -1,5 +1,5 @@
-const clientId = "b32fd4b5105a49729e0366b2fd612780";
-const clientSecret = "2d752b0fecaf4dde9fddd334f04a17be";
+const clientId = "sdfghjkiojhgfd23456789";
+const clientSecret = "gbhnjkiojuhgfdsd2345678987654";
 let i = 0;
 const getToken = async () => {
   const response = await fetch("https://accounts.spotify.com/api/token", {
@@ -149,10 +149,7 @@ const getToken = async () => {
 
         //setting sons name for the audio player
 
-        if (
-          songIndex >= 0 &&
-          songIndex <= songsSrc.length - 1
-        ) {
+        if (songIndex >= 0 && songIndex <= songsSrc.length - 1) {
           let playAndPause = document.getElementById("playSong");
           playAndPause.innerHTML = `<i title="" class="fa-solid fa-pause">`;
 
